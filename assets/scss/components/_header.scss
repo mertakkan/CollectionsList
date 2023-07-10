@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $md;
+
+  &-title {
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    line-height: normal;
+    color: $grim-reaper;
+    font-size: $fs-xl;
+    font-family: $second-font;
+    font-weight: $font-bold;
+  }
+
+  &-tags {
+    display: flex;
+    align-items: flex-start;
+    gap: $xs;
+
+    &__item {
+      display: flex;
+      padding: $sm;
+      align-items: flex-start;
+      gap: $sm;
+      border-radius: $r-xs;
+      background: $white;
+      color: $grim-reaper;
+      font-family: $first-font;
+      font-size: $fs-md;
+      font-style: normal;
+      font-weight: $font-medium;
+      line-height: normal;
+    }
+  }
+}

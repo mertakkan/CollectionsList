@@ -1,0 +1,72 @@
+.collection {
+  display: flex;
+  align-items: flex-start;
+  gap: $xxl;
+  z-index: 3;
+
+  &-card {
+    display: flex;
+    padding: $md;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $md;
+    border-radius: $r-lg;
+    background: $white;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); // Add shadow on hover
+    }
+
+    &-image {
+      display: flex;
+      &__large {
+        width: 389px;
+        height: 268px;
+        flex-shrink: 0;
+
+        border-radius: $r-sm;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+      }
+
+      &__small {
+        width: 119px;
+        height: 97px;
+        flex-shrink: 0;
+        margin-right: $xxs;
+
+        border-radius: $r-sm;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      width: 389px;
+      align-items: center;
+      gap: $sm;
+      color: $grim-reaper;
+      font-family: $first-font;
+      font-size: $fs-xl;
+      font-style: normal;
+      font-weight: $font-medium;
+      line-height: normal;
+
+      &__name {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+      }
+
+      &__count {
+        &__icon {
+          width: 31px;
+          height: 31px;
+        }
+        display: flex;
+        align-items: center;
+        gap: $xxxxs;
+      }
+    }
+  }
+}

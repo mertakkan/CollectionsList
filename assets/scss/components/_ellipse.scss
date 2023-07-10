@@ -1,0 +1,21 @@
+.ellipse1,
+.ellipse2 {
+  background-color: $gray-blue;
+  position: absolute;
+  border-radius: 50%; // To make it elliptical
+  z-index: 1; // To ensure it is behind the frame
+}
+
+.ellipse1 {
+  width: 310px;
+  height: 294px; // Adjust for elliptical shape
+  top: 68px;
+  left: 1200px;
+}
+
+.ellipse2 {
+  width: 433px;
+  height: 410px; // Adjust for elliptical shape
+  bottom: 48px;
+  left: 239px; // Adjust to your liking
+}
